@@ -21,6 +21,10 @@ class FizzBuzzTestCase(TestCase):
         # 実行 and 検証
         self.assertEqual('Fizz', self.fizz_buzz.convert(3))
 
+    def test_int5_to_Buzz(self):
+        # 実行 and 検証
+        self.assertEqual('Buzz', self.fizz_buzz.convert(5))
+
 
 if __name__ == '__main__':
-    main()
+    main(verbosity=2)
