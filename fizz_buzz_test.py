@@ -4,9 +4,10 @@ from fizz_buzz import FizzBuzz
 
 class FizzBuzzTestCase(TestCase):
 
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
         # 前準備
-        self.fizz_buzz = FizzBuzz()
+        cls.fizz_buzz = FizzBuzz()
 
     def test_int1_to_str1(self):
         # 実行 and 検証
